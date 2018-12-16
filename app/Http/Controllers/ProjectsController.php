@@ -51,7 +51,7 @@ class ProjectsController extends Controller
     public function update(Project $project)
     {
         $project->update(\request(['title', 'description']));
-        
+
 
         return redirect('/projects');
     }
